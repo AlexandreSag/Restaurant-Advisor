@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".FragmentMain"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view_restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:iconifiedByDefault="false"
+        android:background="@drawable/loginlayout"
+        app:searchIcon="@drawable/ic_search_grey"
+        app:closeIcon="@drawable/ic_close_grey">
+
+    </androidx.appcompat.widget.SearchView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="60dp"
+        android:layout_margin="8dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

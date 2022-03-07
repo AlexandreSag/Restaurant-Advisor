@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentEditResto"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/EditResto"
+        android:layout_width="264dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/red_salmon"
+        android:text="Edit Restaurant"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <Button
+        android:id="@+id/BtnCreateMenu"
+        android:layout_width="264dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/red_salmon"
+        android:text="Create menu"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditResto" />
+
+    <Button
+        android:id="@+id/DeleteResto"
+        android:layout_width="264dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/red_salmon"
+        android:text="Delete Restaurant"
+        app:layout_constraintBottom_toTopOf="@+id/BtnCreateMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditResto" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

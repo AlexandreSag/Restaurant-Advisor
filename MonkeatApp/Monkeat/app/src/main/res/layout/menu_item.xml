@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="25dp"
+    android:padding="5dp"
+    android:elevation="8dp"
+    android:id="@+id/menu_container"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginBottom="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/MenuCardName"
+            android:layout_width="170dp"
+            android:layout_height="51dp"
+            android:padding="5dp"
+            android:text="Menu Name"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/MenuCardDesc"
+            android:layout_width="171dp"
+            android:layout_height="49dp"
+            android:layout_gravity="bottom"
+            android:text="DESC DE FOU"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:translationX="-168dp" />
+
+        <TextView
+            android:id="@+id/MenuCardPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="12€"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:translationX="-25dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:translationX="-25dp"
+            app:srcCompat="@drawable/euro" />
+
+        <ImageButton
+            android:id="@+id/MenuEditButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:translationX="-75dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            card_view:srcCompat="@drawable/ic_baseline_edit_24" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

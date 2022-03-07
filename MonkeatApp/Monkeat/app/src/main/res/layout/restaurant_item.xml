@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="25dp"
+    android:padding="5dp"
+    android:elevation="8dp"
+    android:id="@+id/restaurant_container"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginBottom="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Resto Name"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageType"
+            android:layout_width="101dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/monkeat_logo" />
+
+        <RatingBar
+            android:id="@+id/RestoratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/yellow"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:progressBackgroundTint="@color/grey"
+            android:contentDescription="@string/app_name"
+            android:scaleX="1.5"
+            android:scaleY="1.5"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
